@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <title>Novo Nordisk Financials</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="/images/p.png">
+  </head>
+
+  <body>
+    <h1>General Summary of Article</h1>
+    <p id="something">&bull; The reduction in cardiovascular risk obsered in adults older than 45 years old, from
+    Wegovy treatment was significant, when compared to the placebo treatment. A double blinded experiment
+    means that neither the participants or the doctors know who is receiving what. In the month August when Wegovy
+    was shown to reduce these ailments,  the stock price jumped 17% according to Yahoo Finance.</p>
+
+    
+    <!-- This will be the container for the line chart, stock price -->
+    <div class="container">
+      <button onclick="stockPrice()">Click to view stock price line chart</button>
+    </div>
+
+    <div id="coolPlot" style="width:100%;max-width:700px"></div>
+
+    <h1>Some More Novo Nordisk Graphical Analysis</h1>
+
+    <!-- When working with plotly use the div element rather than canvas -->
+    <div class="container">
+      <button onclick="profit()">Click to view profit graph</button>
+    </div>
+    <div id="myPlot" style="width:100%;max-width:700px"></div>
+   
+    <!-- Now we can bring in the javascript stuff -->
+    <script src="graphics.js"></script>
+
+    <p>&bull; The profit has increased almost <b>73%</b> over the past 5 years for Novo.
+    With the creation of this new drug, Wegovy, in addition to their already very
+    profitable diabetic treatments, a large percentage Denmark GDP will be on behalf of Novo
+    . The next plot shows the percentage of Denmark GDP to Novo profit. There was only enough data
+    to analyze 3 years.</p>
+
+    <!-- Next plot for comparing Novo profit to Denmark GDP -->
+    <div class="container">
+      <button onclick="percent()">Click to view percent of gdp graph</button>
+    </div>
+    <div id="percentPlot" style="width:100%;max-width:700px;"></div>
+  
+    <p>&bull; The percentage of GDP that Novo Nordisk profit consists of is similar from 2019-2021.
+    This is not indicative of what the percentage would be close to now due to Covid-19 and increased
+    profit figures on behalf of Novo. There just isn't enough GDP data yet to get up to 2022, 2023 years.
+    Right around 12% is still ridiculously high though, even though the country is relatively small. This
+    raises the question of whether the country is becoming too reliant on Novo financials.</p>
+  </body>
+
+    <hr>
+
+    <p>&bull; In conclusion, it is known that the distibution of this new drug will change not only the
+    financial landscape of the company, but also the financial landscape of Denmark (where Novo is located).
+    And these effects have already been witnessed with the stock closing prices.
+    
+    <!-- This is the works cited section which I want centered to the page -->
+    <p style="text-align: center;">[1] “Novo Nordisk A/S (NVO) Stock Historical Prices &amp; Data.” Yahoo! Finance, Yahoo!, 15 Sept. 2023, finance.yahoo.com/quote/NVO/history?p=NVO.
+    <br>[2] Novo Nordisk A/S: Semaglutide 2.4 mg reduces the risk of major adverse cardiovascular events by 20% in adults with overweight or obesity in the SELECT trial. Novo Nordisk.
+    https://www.novonordisk.com/news-and-media/news-and-ir-materials/news-details.html?id=166301#</p>
+    <p style="text-align: right;">Andrew Rogers; 9/15/23</p>
+</html>
